@@ -1,3 +1,3 @@
 # etch-a-sketch
 
-An Etch-a-Sketch game using HTML, CSS, and JavaScript
+An Etch-a-Sketch game created with HTML, CSS, and JavaScript
