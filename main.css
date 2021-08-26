@@ -12,3 +12,7 @@ body {
 .grid-square {
   border: solid 1px black;
 }
+
+.black-background {
+  background: black;
+}

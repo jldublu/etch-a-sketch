@@ -1,3 +1,14 @@
+window.onload = createGrid;
+
+window.addEventListener('mouseover', function(e) {
+  let element = e.target;
+  if (element.classList.contains('grid-square')) {
+    element.classList.add('black-background');
+  }
+
+});
+
+
 /*
   Creates a 16 x 16 grid
 */
@@ -10,5 +21,3 @@ function createGrid() {
     gridContainer.appendChild(gridSquare);
   }
 }
-
-window.onload = createGrid;
