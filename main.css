@@ -4,9 +4,10 @@ body {
 }
 
 .grid-container {
+  --grid-side: 16;
   display: grid;
-  grid-template-columns: repeat(16, calc(310px / 16));
-  grid-template-rows: repeat(16, calc(310px / 16));
+  grid-template-columns: repeat(var(--grid-side), calc(500px / var(--grid-side)));
+  grid-template-rows: repeat(var(--grid-side), calc(500px / var(--grid-side)));
 }
 
 .grid-square {
