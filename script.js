@@ -34,7 +34,7 @@ function resetGrid() {
   }
 
   const sideLength = Number(prompt('Please enter a new grid size. (min:5 max:100)'));
-
+  
   if (Number.isFinite(sideLength) && sideLength >= 5 && sideLength <= 100) {
     removeGrid();
     createGrid(sideLength);

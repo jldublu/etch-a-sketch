@@ -1,6 +1,33 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.border {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: #860116;  
+  width: 670px;
+  height: 650px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.8);
+}
+
+.title {
+  font-family: "Lobster";
+  font-size: 50px;
+  color: #DC987A;
+  -webkit-text-stroke: 0.5px black;
+  -moz-text-stroke: 0.5px black;
+  padding: 0;
+  margin: 0;
 }
 
 .grid-container {
@@ -8,12 +35,40 @@ body {
   display: grid;
   grid-template-columns: repeat(var(--grid-side), calc(500px / var(--grid-side)));
   grid-template-rows: repeat(var(--grid-side), calc(500px / var(--grid-side)));
+  background: #860116;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .grid-square {
-  border: solid 1px black;
+  background: #D0D3C8;
 }
 
 .black-background {
   background: black;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 5px;
+  width: 660px
+}
+
+.clear-button {
+  width: 150px; 
+  height: 50px; 
+  font-size: 20px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+  border: none; 
+}
+
+.dial {
+  display: inline-block;
+  background: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
 }
